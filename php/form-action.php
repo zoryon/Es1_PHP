@@ -15,11 +15,11 @@
         $id = $_GET["id"];
         $age = $_GET["age"];
 
-        var_dump($id);
-        var_dump($age);
-
-        echo "<b>" . $id . "</b>";
-        echo "<b>" . $age . "</b>";
+        if ($age >= 18) {
+            echo "<div>Sei maggiorenne</div>";
+        } else {
+            echo "<div>Sei minorenne</div>";
+        }
     ?>
 </body>
 
